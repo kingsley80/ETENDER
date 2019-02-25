@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>etender.com | Organisation</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<style type="text/css">
+span{
+  color: #e8491d;
+}
+
+/* sliding area */
+#container{
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#container > img{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+
+}
+
+slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute; 
+}
+
+slider > *{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden; 
+}
+
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url('img/lay.jpg');
+  background-size: cover;
+  background-position: center; 
+
+}
+
+slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url('img/jays.jpg');
+  background-size: cover;
+  background-position: center; 
+
+}
+
+slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url('img/veko.jpg');
+  background-size: cover;
+  background-position: center; 
+
+}
+
+slide:nth-child(4){
+  left: 0%;
+  animation-delay: 8s;
+  background-image: url('img/home.jpg');
+  background-size: cover;
+  background-position: center; 
+
+}
+
+slide p{
+  font-family: comfortaa;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 100px;
+  color: #fff;
+}
+
+@keyframes slide {
+    0% { left: 100%; width: 100%; }
+    5% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; width: 100%; }
+    30.0001% { left: -100%; width: 0%; }
+    100% { left: 100%; width: 0%; }
+}
+/* end of sliding area **/
+
+	#newsletter{
+   	padding: 1%;
+   	color: #ffffff;
+   	background: #f4f4f4;
+   }
+
+   #newsletter form{
+   	text-align: center;
+   	margin-top: 1px;
+   }
+
+   #newsletter input[type="email"]{
+   	padding: 4px;
+   	height: 25px;
+   	width: 800px;
+   	border-radius: 5px;
+   	border-top-style: none;
+   	border-left: none;
+   	border: 2px solid #000000;
+   	margin-top: 50px;
+
+   }
+
+   
+
+   footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #35424a;
+    text-align: center;
+    margin-top: 80px;
+   }
+
+   select{
+    padding: 4px;
+    height: 38px;
+    width: 810px;
+    border-radius: 5px;
+    border-top-style: none;
+    border-left: none;
+    border: 2px solid #000000;
+    margin-top: 50px;
+    margin-right: 78px;
+    padding-right: 23px;
+    
+
+   }
+
+   .swagbutton{
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #e8491d;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: inherit;
+    }
+
+
+</style>
+<body>
+	<header>
+  <div class="container"> 
+    <div id="branding">
+         <h1><span class="highlight">e-tenderNigeria</span>.COM</h1>
+          </div>
+          <nav>
+        <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="cost data base.html">Cost Data Base</a></li>
+         <li class="current"><a href="organisation.html">Organisation</a></li>
+         <li><a href="Account.html">Account</a></li>
+         <li><a href="Contact us.html">Contact us</a></li>
+         <li><a href="Admin.html">Admin</a></li>   
+        </ul>
+          </nav> 
+    </div>
+</header>
+<div id="container">
+  <slider>
+    <slide><p style="margin-top: 200px;"><span>e-tender</span>.com</p></slide>
+    <slide><p><span>e-tender</span>.com</p></slide>
+    <slide><p><span>e-tender</span>.com</p></slide>
+    <slide><p><span>e-tender</span>.com</p></slide>
+    <form>
+     <input type="email" placeholder="Search organisation.....">
+     <a href="Account.html" class="swagbutton">Enter</a>
+              
+   </form>  
+  </slider>
+  </div>
+
+
+     
+     
+    
+
+<section id="newsletter">
+   <div class="container">
+	
+	 <form>
+	   <input type="email" placeholder="Search organisation.....">
+     <a href="Account.html" class="swagbutton">Enter</a>
+              
+	 </form>	
+   </div>
+</section>
+
+
+<footer>
+
+<p>etender.com | copyright &copy; 2019</p> 
+
+</footer>
+
+
+
+</body>
+</html>

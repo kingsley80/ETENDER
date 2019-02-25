@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>etender.com | Tender Analysis Page</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<style type="text/css">
+  .wrapper{
+    width: 90%;
+  }
+
+  .button_1{
+    width: 200px;
+    height: 40px;
+    margin-left: 2px;
+    background: #03a9f4;
+  }
+
+  .swagbutton{
+      border: none;
+      outline: none;
+      color: #fff;
+      background: red;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: inherit;
+      margin-left: 20%;
+      position: absolute;
+      margin-top: 50px;
+  }
+
+  /* wrapper **/
+   .wrapper{
+    display: grid;
+    grid-template-columns: 22% 78%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin-top: 20px; 
+   }
+   .wrapper > div{
+    background:#ddd;
+    padding: 1em;
+   }
+
+   .wrapper > div:nth-child(odd){
+    background: #eee ;
+   }
+
+   footer{
+    margin-top: 80px;
+   }
+</style>
+<body>
+  <header>
+  <div class="container">
+    <div id="branding">
+         <h1><span class="highlight">e-tender</span>.COM</h1>
+          </div>
+          <nav>
+        <ul>
+         <li class="current"><a href="index.html">Home</a></li>
+         <li><a href="cost data base.html">Cost Data Base</a></li>
+         <li><a href="Organisation.html">Organisation</a></li>
+         <li><a href="Account.html">Account</a></li>
+         <li><a href="Contact us.html">Contact us</a></li>
+         <li><a href="Admin.html">Admin</a></li>
+
+        </ul>
+          </nav> 
+    </div>
+</header>
+
+ <div class="wrapper">
+  <div>
+      <img src="img/1bed.jpg" height="300" width="240">
+      <br>
+      
+    </div>
+    <div>
+      <table border="1" width="720"   cellspacing="0">
+        <tr>
+          <th>Project Details</th>
+          <th>Consultant Figure</th>
+          <th>Consultant Contract Duration</th>
+          <th>Bidding companies</th>
+          <th>Tender Figure</th>
+          <th>% of Deviation From Consultant Figure</th>
+          <th>% of Consistancy in Pricing</th>
+          <th>Contract Duration</th>
+          <th>Overall Remark</th>
+          <th></th>
+          
+        </tr>
+        <tr>
+          <td>Two Bedroom Flat</td>
+          <td>24,000,000</td>
+          <td>12 weeks</td>
+          <td>Y&S Ltd</td>
+          <td>23,000,000</td>
+          <td> - 4.17%</td>
+          <td>42%</td>
+          <td>14 Weeks</td>
+          <td>40</td>
+          <td><button type="submit" class="button_1"><a href="">View Contract DOCS</a></button></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Bimham Ltd</td>
+          <td>30,000,000</td>
+          <td> +25%</td>
+          <td>70%</td>
+          <td>15 Weeks</td>
+          <td>60</td>
+          <td><button type="submit" class="button_1"><a href="">View Contract DOCS</a></button></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Julius Berger Nigerian PLC</td>
+          <td>31,000,000</td>
+          <td> +29.17%</td>
+          <td>90%</td>
+          <td>10 Weeks</td>
+          <td>75</td>
+          <td><button type="submit" class="button_1"><a href="">View Contract DOCS</a></button></td>
+        </tr>
+        
+      </table>
+      <a href="Award Contract.html" class="swagbutton">Award Contract</a>
+    </div>
+    </div>
+  
+
+<footer>
+<p>etender.com | copyright &copy; 2019</p> 
+</footer>
+
+</body>
+</html>
